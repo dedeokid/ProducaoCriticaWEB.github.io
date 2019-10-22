@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">	<!-- Inicia ciclo de Programação HTML com idioma da página em PT-BR-->
+	<head>			<!-- Inicia a parte dos Títulos -->
+		<meta charset="utf-8"><!--Este elemento define o tipo da codificação dos caracteres SEMPRE BOM COLOCAR-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Enxerga o tamanho da tela do dispositivo-->
+		<title>HTML_Aula_Critica_e_Produção_para_WEB</title>	<!-- o título da página que é exibido na barra de título dos navegadores -->
+		<style> 
+		body {
+			background-color: white;
+			}
+		h1 	{
+			color: black;
+			font-family: arial;
+			font-size: 5vw;
+			}
+		p  	{
+			color: powderblue;
+			font-family: courier;
+			font-size: 2vw;
+			border: 1px solid powderblue;<!-- Cor, Tipo e Grossura das Bordas -->
+			margin: 50px;<!-- Margem das Bordas -->
+			}
+		#AZUL {color: blue;}<!-- Uma ID de estilo AZUL -->
+		
+		p.TAMANHO5VW {font-size: 5vw;}
+		p.FONTEVERDANA {font-family: verdana;}
+				
+		.btn-group .button 
+			{
+			background-color: yellow;
+			border: 2px solid maroon;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+			margin: 4px 2px;
+			webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			display: block;
+			}
+		.btn-group .button:hover 
+			{
+			background-color: #4CAF50;
+			color: white;
+			}
+		table, th, td {
+		border: 1px solid black;
+		padding: 5px;
+		}
+		table {
+		  border-spacing: 15px;
+		}
+		</style>	<!-- Fim da parte dos Títulos -->
+	</head>
+	
+	<body>			<!-- Inicia parte das Coisas -->
+	<h1><strong><u>Crítica e Produção para WEB</u></strong></h1> <!-- Título da Página -->
+		<HR>		<!-- Insere uma linha que ocupa a largura da tela-->
+		<img src="WEB01.gif" alt="WEBGIF" style="width:50%;">
+	<p>	<!-- Parágrafo da Página-->
+	
+	<!-- Scripits de funções em Java  -->
+		<script>
+		
+		function popupSobre() {
+		  var myWindow = window.open("", "MsgWindow", "width=512px,height=512px");
+		  myWindow.document.write("<p>Ementa:<br/>1º Reflexões sobre o desenvolvimento histórico, estético e político neste meio.<br/>2º Discussões sobre direitos humanos e relações étnico-raciais na www.<br/>3º Fundamentos de Produção para web.<hr><br/>OBJETIVO:<br/>Introduzir o aluno na:Análise crítica;Concepção;Desenvolvimento;Produção; de sites para WEB.<hr><br/>DIDÁTICA:<br/>Aulas teóricas:Exposição do histórico, seguida de análise e crítica da WEB através da exposição de obras relevantes para o contexto da disciplina. <br/>Aulas práticas:Concepção e desenvolvimento de um site em HTML para a WEB com propostas individuais e/ou coletivas.<hr><br/>AVALIAÇÃO:<br/>Defesa escrita de conceito, roteiro e desenvolvimento; trabalhos práticos; análise crítica do trabalho; participação em aula; participação coletiva (quando for o caso)</p>");
+			
+		}
+		function popupHistoricoComeco() {
+		  var myWindowH = window.open("", "MsgWindowHistorico", "width=512px,height=480px");
+		  myWindowH.document.write("<p><br/>Em 1989, Tim Berners-Lee(1955-) <img src='TimBernersLee.png' alt='Tim' style='width:25%'/> propôs para o CERN um sistema de distribuição de informação baseado em hipertexto.<br/>Protegeu os endereços de rede mas permitiu acessibilidade à informação a partir de vários computadores. <br/>A este sistema, deram o nome de WEB (world wide web, ou rede mundial), com o mundo inteiro conectado como uma biblioteca.<br/>Uma declaração das intenções de Tim... <a href='https://www.youtube.com/watch?v=GU6fWHHu6Es' target='_blank'>Tim Berners-Lee (CERN) - Talking about Creation of the Interne </a><br/>Em 1990, Robert Cailliou(1947-) <img src='RobertCaillou.png' alt='Tim' style='width:25%'/>juntou-se a Berners-Lee e começaram a desenvolver a WEB no CERN, ou European Organization for Nuclear Research.<br/>Produziram o primeiro programa de navegação e o primeiro servidor (server).</br>.. <a href='https://www.youtube.com/watch?v=10NuyhiTvd0' target='_blank'>Internet and Web Pioneers: Robert Cailliau </a> </p>");
+			
+		}
+		function popupNavegacao() {
+		  var myWindowN = window.open("", "MsgWindowNavegacao", "width=1024px,height=1024px");
+		  myWindowN.document.write("<p><br/>Surfar nas ondas da WEB incorpora várias outras formas de navegação <img src='Surfing.gif' alt='Surf' style='width:25%'/><br/><HR> No Egito Antigo por exemplo, tinhamos a navegação andando pelo espaço para ler hyeróglifos na parede<img src='Hyeroglifos.png' alt='Hyeroglifos' style='width:25%'/><br/><HR> Na Mesopotâmia usávamos placas de argila para escrever com cunhas na escrita Cuneiforme<img src='PlacaDeArgila.jpg' alt='PlacaArgila' style='width:25%'/><br/> <HR>Ainda no Egito, aprendemos a usar o caniço de uma planta chamada papirus, e criamos a navegaçã do tipo desenrolar um rolo, como no Papirus de Ani, ou o Livro dos Mortos<img src='PapirusDosMortos.jpg' alt='PapirusdeAni' style='width:25%'/><br/> <HR>O formato livro(códex) foi possibilitado pela costura de folhas de pergaminhos(feitos de couro), cresceu posteriormente com o papel, e se firmou com a técnica de gravação de Johanes Guttemberg(1400-1458). Na figura, Códex Alexandrinus, um Novo Testamento do século 5 em grego e folhas de pergaminhos <img src='CodexAlexandrinus.png' alt='CodexAlexandrinus' style='width:25%'/><br/><HR>  A navegação pelo método do códex é a opção mais popular, mesmo entre nossa era de hipertextos linkados que levam de uma página a outra.<br/> Mas, não podemos descartar outros, como o desenrolar do pergaminho que está presente nas barras de rolagem verticais em um meio eletrônico de leitura, ou mesmo o andar pelo quarto olhando as paredes, presente nos murais, grafittes, e nas simulações de espaço em 3D. <img src='Linking.gif' alt='Hyperlink' style='width:25%'/><br/><HR> </p>");
+			
+		}
+		</script>
+	
+		<div class="btn-group">
+			<button class="button" onclick="popupSobre()">Sobre a disciplina...</button><!-- Ementa e derivados -->
+			<button class="button" onclick="popupHistoricoComeco()">Como Tudo Começou?</button><!-- Como tudo começou? -->
+			<button class="button" onclick="popupNavegacao()">Navegação nas Mídias</button><!-- Pensando a Respeito -->
+			<button class="button">Criando um Site</button><!-- Tutoriais de HTML -->
+			<button class="button">Quem sou eu?</button><!-- Contatos -->
+			<button class="button">Quem é você?</button><!-- Registra Usuário -->
+		</div>
+		<table style="width:100%"><caption>Evolução das Redes Telemáticas</caption><tr><th>Avanço Informacional</th><th>Data</th><th>Interconecção entre...</th><th>Protocolos baseados em...</th></tr><tr><td>Computador</td><td>1950</td><td>Transistores</td><td>Endereços de Bits</td></tr><tr><td>Internet</td><td>1980</td><td>Servidores</td><td>Endereço de Servidores</td></tr><tr><td>WorldWideWeb</td><td>1995</td><td>Documentos</td><td>URLs= Páginas</td><tr><td>Espaço Semântico</td><td>2015</td><td>Balizas Semânticas</td><td>USLs=Espaço Semântico</td></tr></table>
+	</p>			<!-- Fim do Parágrafo da Página -->
+	
+	</body>			<!-- Fim da parte das Coisas -->
+</html>			<!-- Finaliza o ciclo de Programação HTML-->
