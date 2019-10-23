@@ -6,12 +6,13 @@
 		<title>HTML_Aula_Critica_e_Produção_para_WEB</title>	<!-- o título da página que é exibido na barra de título dos navegadores -->
 		<style> 
 		body {
-			background-color: white;
+			background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+			transition:all 5s ease;
 			}
 		h1 	{
 			color: black;
 			font-family: arial;
-			font-size: 5vw;
+			font-size: 3vw;
 			}
 		p  	{
 			color: powderblue;
@@ -35,25 +36,43 @@
 			text-decoration: none;
 			display: inline-block;
 			font-size: 16px;
+			line-height:8px;
 			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 			margin: 4px 2px;
-			webkit-transition-duration: 0.4s;
-			transition-duration: 0.4s;
+			webkit-transition-duration: 2s;
+			transition-duration:2s;
 			cursor: pointer;
 			display: block;
 			}
 		.btn-group .button:hover 
 			{
-			background-color: #4CAF50;
+			background-image: linear-gradient(-45deg, red, yellow);
 			color: white;
+			font-size:110%;
+			text-align:left;
+			line-height:32px;
+			text-shadow: 4px 4px 4px #321;
+			width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			
+			/* arredonda bordas */
+			border-radius:16px;
+				
+			-moz-transform: scale(1.1) translate(32px, 0px);
+            -webkit-transform: scale(1.1) translate(32px, 0px);
+            -o-transform: scale(1.1) translate(32px, 0px);
+            -ms-transform: scale(1.1) translate(32px, 0px);
+            transform: scale(1.1) translate(32px, 0px);
 			}
 		table, th, td {
 		border: 1px solid black;
-		padding: 5px;
+		padding: 2px;
 		}
 		table {
-		  border-spacing: 15px;
-		}
+		  border-spacing: 10px;
+		    background-image: linear-gradient(to top right, white, gray);
+		}		
+				
 		</style>	<!-- Fim da parte dos Títulos -->
 	</head>
 	
@@ -81,13 +100,18 @@
 		  myWindowN.document.write("<p><br/>Surfar nas ondas da WEB incorpora várias outras formas de navegação <img src='Surfing.gif' alt='Surf' style='width:25%'/><br/><HR> No Egito Antigo por exemplo, tinhamos a navegação andando pelo espaço para ler hyeróglifos na parede<img src='Hyeroglifos.png' alt='Hyeroglifos' style='width:25%'/><br/><HR> Na Mesopotâmia usávamos placas de argila para escrever com cunhas na escrita Cuneiforme<img src='PlacaDeArgila.jpg' alt='PlacaArgila' style='width:25%'/><br/> <HR>Ainda no Egito, aprendemos a usar o caniço de uma planta chamada papirus, e criamos a navegaçã do tipo desenrolar um rolo, como no Papirus de Ani, ou o Livro dos Mortos<img src='PapirusDosMortos.jpg' alt='PapirusdeAni' style='width:25%'/><br/> <HR>O formato livro(códex) foi possibilitado pela costura de folhas de pergaminhos(feitos de couro), cresceu posteriormente com o papel, e se firmou com a técnica de gravação de Johanes Guttemberg(1400-1458). Na figura, Códex Alexandrinus, um Novo Testamento do século 5 em grego e folhas de pergaminhos <img src='CodexAlexandrinus.png' alt='CodexAlexandrinus' style='width:25%'/><br/><HR>  A navegação pelo método do códex é a opção mais popular, mesmo entre nossa era de hipertextos linkados que levam de uma página a outra.<br/> Mas, não podemos descartar outros, como o desenrolar do pergaminho que está presente nas barras de rolagem verticais em um meio eletrônico de leitura, ou mesmo o andar pelo quarto olhando as paredes, presente nos murais, grafittes, e nas simulações de espaço em 3D. <img src='Linking.gif' alt='Hyperlink' style='width:25%'/><br/><HR> </p>");
 			
 		}
+		function popupComo() {
+		  var myWindowN = window.open("", "MsgWindowComo", "width=1024px,height=1024px");
+		  myWindowN.document.write("<p><br/>Como fazer para se criar um site?<img src='Surfing.gif' alt='Surf' style='width:25%'/> </p>");
+			
+		}
 		</script>
 	
 		<div class="btn-group">
 			<button class="button" onclick="popupSobre()">Sobre a disciplina...</button><!-- Ementa e derivados -->
 			<button class="button" onclick="popupHistoricoComeco()">Como Tudo Começou?</button><!-- Como tudo começou? -->
 			<button class="button" onclick="popupNavegacao()">Navegação nas Mídias</button><!-- Pensando a Respeito -->
-			<button class="button">Criando um Site</button><!-- Tutoriais de HTML -->
+			<button class="button" onclick="popupComo()">Como?</button><!-- Tutoriais de HTML -->
 			<button class="button">Quem sou eu?</button><!-- Contatos -->
 			<button class="button">Quem é você?</button><!-- Registra Usuário -->
 		</div>
